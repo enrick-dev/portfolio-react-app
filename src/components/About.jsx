@@ -13,14 +13,13 @@ const About = () => {
             </div>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                 <div className='sm:text-right text-4xl font-bold text-gray-300 '>
-                    <p>Ola. Eu sou eu sou, bem vindo ao bem vindo sim ism yes.</p> 
+                    <p>Ola. Eu sou Enrick, prazer em conhece-lo, conheçam um pouco sobre mim.</p> 
                 </div>
                 <div>
-                    <p>Eu sou eu sou, bem vindo ao bem vindoturtu sim ism yes.
-                    Eu sou eu soum bem vim yes.Euujfgj hgjfhvity uttutrurndo ao bem vdo sim ism yes.
-                    Eu sou eu sou, bem vindo ao bem vindim ism yes.fhjfjfhj
-                    Eu sou, bem vindo ao ghjfjf7u5be sim ism yes.
-                    Eu sou eu sou, bem vindo ao b</p>
+                    <p>Sou apaixonado pela construção websites modernos, 
+                    responsivos e minimalistas, inexperiente 
+                    profissionalmente mas completamente empenhado no que faz.
+                    </p>
                 </div>
             </div>
         </div>
