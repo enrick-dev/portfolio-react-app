@@ -1,8 +1,8 @@
-import React from 'react'
 import HTML from '../assets/html.png'
 import CSS from '../assets//css.png'
 import Javascript from '../assets/javascript.png'
 import ReactImg from '../assets/react.png'
+import React from 'react'
 
 const Skills = () => {
   return (
