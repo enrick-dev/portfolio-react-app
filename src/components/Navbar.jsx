@@ -2,6 +2,7 @@ import React, {useState, useSyncExternalStore} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {Link} from 'react-scroll'
 import Logo from '../assets/logo.png'
 
 const Navbar = () => {
@@ -16,11 +17,21 @@ const Navbar = () => {
 
         {/* menu */}
         <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Habilidades</li>
-            <li>Trabalhos</li>
-            <li>Contato</li>
+            <li><Link to="home" smooth={true} duration={500}>
+            Home
+            </Link></li>
+            <li><Link to="about" smooth={true} duration={500}>
+            Sobre
+            </Link></li>
+            <li><Link to="skills" smooth={true} duration={500}>
+            Habilidades
+            </Link></li>
+            <li><Link to="work" smooth={true} duration={500}>
+            Trabalhos
+            </Link></li>
+            <li><Link to="contact" smooth={true} duration={500}>
+            Contato
+            </Link></li>
         </ul>
 
         {/* Hamburguer Menu */}
@@ -30,11 +41,26 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul className={!navMobile ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>Home</li>
-            <li className='py-6 text-4xl'>Sobre</li>
-            <li className='py-6 text-4xl'>Habilidades</li>
-            <li className='py-6 text-4xl'>Trabalhos</li>
-            <li className='py-6 text-4xl'>Contato</li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={navClick} to="home" smooth={true} duration={500}>
+            Home
+            </Link></li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={navClick} to="about" smooth={true} duration={500}>
+            Sobre
+            </Link></li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={navClick} to="skills" smooth={true} duration={500}>
+            Habilidades
+            </Link></li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={navClick} to="work" smooth={true} duration={500}>
+            Trabalhos
+            </Link></li>
+            <li className='py-6 text-4xl'>
+            <Link onClick={navClick} to="contact" smooth={true} duration={500}>
+            Contato
+            </Link></li>
         </ul>
 
         {/* Social Icon */}
@@ -56,12 +82,6 @@ const Navbar = () => {
                     <a className='flex justify-between items-center w-full text-gray-300'
                     href="/">
                         Email <HiOutlineMail size={30}/>
-                    </a>
-                </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                    <a className='flex justify-between items-center w-full text-gray-300'
-                    href="/">
-                        Resumo <BsFillPersonLinesFill size={30}/>
                     </a>
                 </li>
             </ul>
