@@ -13,10 +13,10 @@ const About = () => {
             </div>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                 <div className='sm:text-right text-4xl font-bold text-gray-300 '>
-                    <p>Ola. Eu sou Enrick, prazer em conhece-lo, conheça um pouco sobre mim.</p> 
+                    <p>Ola. Prazer em conhece-lo, conheça um pouco sobre mim.</p> 
                 </div>
                 <div>
-                    <p>Sou apaixonado pela construção websites modernos, 
+                    <p>Sou apaixonado pela construção de websites modernos, 
                     responsivos e minimalistas, inexperiente 
                     profissionalmente mas completamente empenhado no que faz.
                     </p>
